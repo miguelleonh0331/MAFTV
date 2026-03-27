@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página de Prueba - MAFTV</title>
     <style>
-        /* Estilos básicos para que no se vea feo */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -52,8 +51,30 @@
             color: #3498db;
         }
 
-        .repo-link {
+        /* Estilos del botón */
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
             margin-top: 25px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+        }
+
+        .repo-link {
+            margin-top: 30px;
             font-size: 0.9em;
             color: #95a5a6;
         }
@@ -74,11 +95,14 @@
         <h1>¡Hola, Miguel!</h1>
         <div class="status-badge">Prueba de GitHub Pages Exitosa</div>
         
-        <p>Esta es una página de prueba sencilla creada para verificar tu despliegue. Si estás viendo esto en tu URL personal de GitHub (<code>tusuariogithub.io/nombre-repo</code>), ¡felicidades!</p>
+        <p>Esta es una página de prueba sencilla creada para verificar tu despliegue.</p>
         
         <p>Este archivo forma parte del repositorio: <span class="project-name">MAFTV</span>.</p>
 
-        <p>A partir de aquí, puedes editar este archivo y agregar tus propios estilos, imágenes y JavaScript para convertirlo en tu proyecto personal.</p>
+        <!-- Botón que quieres -->
+        <a href="https://www.google.com" target="_blank" class="btn">
+            Actualizar
+        </a>
 
         <div class="repo-link">
             <p>Volver a <a href="https://github.com/miguelleonh0331/MAFTV" target="_blank">tu repositorio en GitHub</a></p>
